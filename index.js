@@ -5,8 +5,6 @@ const imageDiv = document.querySelector(".images");
 const imgs = document.querySelector("#imageList");
 const rslts = document.querySelector("#resultList");
 
-queryText.addEventListener("keyup", function(){console.log(queryText.value)});
-
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     let imageURL = "https:www.googleapis.com/customsearch/v1?q="+queryText.value+"&cx=001628731137213283695:jmjdbkgy3nk&key=AIzaSyCo55ucXq9DEmDX-HOfFjcFcFDFMHAOK1w&searchType=image"
@@ -21,8 +19,6 @@ form.addEventListener("submit", function(e) {
         let element = document.createElement("img");
         let imageSrc =  data.items[i].link;
         element.src = imageSrc;
-        // element.height = "30%";
-        // element.width = "30%";
         imgs.appendChild(element);
       }
     }).catch(function(err) {
@@ -34,8 +30,6 @@ form.addEventListener("submit", function(e) {
     let resultURL = "https:www.googleapis.com/customsearch/v1?q="+queryText.value+"&cx=001628731137213283695%3A3ydk8iqc5ww&key=AIzaSyCo55ucXq9DEmDX-HOfFjcFcFDFMHAOK1w"
     fetch(resultURL)
     .then(function(response) {
-      // console.log("response");
-      // console.log(response);
       return response.json();
     }).then(function(data) {
       //Here is where we'll add the data to the DOM
@@ -49,7 +43,6 @@ form.addEventListener("submit", function(e) {
         p.innerHTML = data.items[i].snippet;
         a.href = data.items[i].link;
         a.innerHTML = "<br/>"+ data.items[i].link;
-        div.height = "150";
         div.appendChild(a);
         div.appendChild(p);
         rslts.appendChild(div);
