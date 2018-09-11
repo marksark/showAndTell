@@ -4,8 +4,8 @@ This is a fun tool that uses Google's API to show a result and
 image related to the search query. This tool can be used when trying to "show and tell"
 someone about a topic.
 
-It is done in vanilla javascript and uses asynchronous programming in order to update
-the page without re-rendering it.
+It uses asynchronous programming and is reusable.
+It was made in javascript with bootstrap for the layout.
 
 ## Requirements
 
