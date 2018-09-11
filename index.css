@@ -1,3 +1,7 @@
+html body {
+    background-color: grey;
+}
+
 h1 {
 text-align: center;
 }
@@ -6,18 +10,15 @@ text-align: center;
   width: 42%;
   padding: 15px;
   margin-top: 25px;
+  background-color: rgb(130, 129, 130);
   display: inline-table;
 }
 
 img {
-  padding: 3px;
-  margin: 3px;
-}
-
-.resultArea {
-  padding: 20px;
-  width: 80%;
-  border: 1px solid red;
+  padding: 2px;
+  margin: 2px;
+  width: 32.33%;
+  height: 32.33%;
 }
 
 .mid {
@@ -26,7 +27,7 @@ img {
 }
 
 #wrapper {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -62,4 +63,8 @@ button {
 .resultBorder {
   border: 1px solid green;
   background: green;
+}
+
+body a {
+  color: darkblue;
 }
