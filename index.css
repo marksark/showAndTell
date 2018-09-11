@@ -1,5 +1,5 @@
 html body {
-    background-color: grey;
+    background-color: #d3d3d3;
 }
 
 h1 {
@@ -10,7 +10,7 @@ text-align: center;
   width: 42%;
   padding: 15px;
   margin-top: 25px;
-  background-color: rgb(130, 129, 130);
+  background-color: #d3d3d3;
   display: inline-table;
 }
 
@@ -29,10 +29,11 @@ img {
 #wrapper {
     width: 85%;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
-.border {
-    border: 3px solid gray;
+div .border {
+    border: 2px solid black !important;
 }
 
 button {
@@ -53,6 +54,7 @@ button {
 
 .headline {
   margin-top: 10px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
 
